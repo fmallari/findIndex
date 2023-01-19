@@ -32,10 +32,10 @@ removeUser(users, 'akagen') // undefined
 */
 
 function removeUser(usersArray, username) {
-  let foundIndex = userArray.findIndex(function(user){
+  let foundTheIndex = userArray.findIndex(function(user){
     return user.username === username;
   })
-  if(foundIndex === -1) return;
+  if(foundTheIndex === -1) return;
 
-  return usersArray.splice(foundIndex,1)[0];
+  return usersArray.splice(foundTheIndex,1)[0];
 }
